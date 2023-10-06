@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel Booking form</title>
+    </head>
+    <body>
+       <form action=" " method ="GET">
+        <fieldset>
+            <legend>Personal Details :</legend>
+            <label for="name">Username: </label>
+        <input type="text" name="username" id=" name" required autofocus placeholder="your username" pattern="[a-zA]{3,}" title="Please enter in more than three letters ">
+       <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required placeholder="your email" pattern="[a-zA-Z]{3,1}@[a-zA-Z]{3,1}[.]{1}[a-zA-Z]{2,}" title="Please enter a valid email address">
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="please enter in your phome number" pattern="[0-9]{4} [0-9]s{3}[0-9]{3}" title="Please enter in a phone number in this format: #### ### ####">
+        <select name="country" required>
+            <option value=""> </option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+            <option value="AUS">AUS</option>
+        </select>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Booking Details:</legend>
+        <label for="data">Booking date:</label>
+        <input type="data" name="date" min="2013-12-02">
+        <input type="number" name="numberOfGuests" min="1" max="6">
+        <p>Do you required meals?</p>
+        <input type="radio" name="meals" value="YesMeals">
+        <input type="radio" name="meals" value="noMeals">
+        <br>
+        <input type="checkbox" name="balcony" value="yes" checked>
+        <br>
+        <input type="image" src="C:\Users\anupriya\Downloads\button.png">
+    </fieldset>
+       </form>
+    </body>
+    </html>
